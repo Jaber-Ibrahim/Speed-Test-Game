@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="game">
+          <div class="name">Typing Speed Test Game</div>
+         
+          <div class="instructions">
+            <h1>Instructions</h1>
+                <ul>
+                    <li>Choose level</li>
+                    <li>Each Level has its own seconds (Easy 4s, Normal 3s, Hard 2s, Pro 1s) and array</li>
+                    <li>First Word has 5 Extra Seconds</li>
+                    <li>You Have to type the word shown in box above the input field before timeout</li>
+                    <li>Your Score is the numbers of Words you have done</li>
+                    <li>The Score on the right bottom</li>
+                    <li>If time finish and your score is zero then game over</li>
+                    <li>I Wish You Best Of Luck and lot of Fun</li>
+                    <li>Click The Start Button To Choose Level and Start Playing</li>
+                    <li>Start</li>
+                </ul>
+        </div>
+          
+        <div class="choose-level">
+            <label for="lev">Choose Level:</label>
+            <select class="select" name="lev" id="lev">
+                <option value=""></option>
+                <option value="easy">Easy</option>
+                <option value="normal">Normal</option>
+                <option value="hard">Hard</option>
+                <option value="pro">Pro</option>
+              </select>
+        </div>
+          <div class="container">
+          <div class="message">
+          You Are Playing On
+          <span class="lvl"></span>
+          Level & You Have
+          <span class="seconds"></span>
+          Seconds To Type The Word
+        </div>
+        <div class="start">Start Playing</div>
+        <div class="restart">Restart</div>
+        <div class="the-word"></div>
+        <input type="text" class="input" />
+        <!-- هون تحت رح يتم انشاء ديفات واصافة كلمات لها باستخدام جافا سكريبت  فنحنا منحط ديفات 
+            مشان نعمل التنسيق والكلاسات اللازمة وبعدا منرجع منحذفن -->
+        <div class="upcoming-words">
+          Words Will Show Here
+          <!-- <div>one</div>
+                <div>two</div> -->
+        </div>
+        <div class="control">
+          <div class="time">
+            Time Left:
+            <span></span>
+            Seconds
+          </div>
+          <div class="score">
+            Score:
+            <span class="got"></span>
+            From
+            <span class="total"></span>
+          </div>
+        </div>
+        <div class="finish"></div>
+    </div>
+</div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+:root {
+    --main-color : #2196f3;
+    --second-color : rgb(69, 224, 69);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Tahoma , Arial;
+}
+.game {
+    background-color: #eee;
+    min-height: 100vh;
+}
+.name {
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.instructions h1 {
+    margin: 10px 0;
+    background-color: var(--main-color);
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.instructions ul {
+    margin: 0 50px;
+    list-style: disc;
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2;
+}
+.instructions ul li:last-child {
+    list-style: none;
+    text-align: center;
+    margin: 50px auto 0;
+    background-color: var(--second-color);
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container {
+    margin: auto;
+    width: 80%;
+    display: none;
+}
+.choose-level {
+    margin: 10px 0;
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+.select {
+    position: relative;
+    z-index: 1;
+    padding: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--second-color);
+    background-color: white;
+    border: none;
+    outline: none;
+}
+.message {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.message span{
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+/* before and after each span */
+span::before {
+    content: "[ ";
+}
+span::after {
+    content: " ]";
+}
+
+
+/* start is a button to start playing */
+.start {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--second-color);
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+.restart {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--second-color);
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+.the-word {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main-color);
+    /* ما فيه يحددا الشخص مشان ما ينسخا*/
+    /* user-sele    ct: none;  */
+}
+.input {
+    margin: 15px 0;
+    width: 100%;
+    border: 4px solid var(--main-color);
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    /* اول حرف رح يكون كبير لما ببلش دخل */
+    text-transform: capitalize;
+    border-radius: 5px;
+    caret-color: var(--main-color);
+    outline: none;
+}
+.upcoming-words {
+    background-color: white;
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.upcoming-words div {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.control span {
+    font-weight: bold;
+    color: var(--second-color);
+}
+.finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+.finish .good{
+    color: var(--main-color);
+}
+.finish .bad{
+    color: red;
+}
